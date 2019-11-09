@@ -1,6 +1,6 @@
 //https://swapi.co/api/
 
-class SwapiService {
+export default class SwapiService {
 
   _apiBase = 'https://swapi.co/api';
 
@@ -42,13 +42,3 @@ class SwapiService {
   };
 
 }
-
-const swapi = new SwapiService();
-
-swapi.getAllPeople()
-  .then(data=> data.forEach(item => console.log(item.name)));
-
-swapi.getAllPlanets()
-  .then(data=> data.forEach(item => console.log(item.name)));
-
-swapi.getPerson(2).then(data=> console.log('finally, we have', data));

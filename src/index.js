@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const el = (<div></div>);
+import App from './components/app';
 
-ReactDOM.render(el, document.getElementById('root'));
+
+ReactDOM.render(<App />, document.getElementById('root'));
